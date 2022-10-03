@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include <unistd.h>
+int main(){
+	
+	int id;
+	char name[20];
+	printf("Enter the process id and name : ");
+	scanf("%d %s",&id,&name);
+	fork();
+	printf("\nProcess id : %d \nProcess name : %s ",id,name);
+	return 0;
+}
